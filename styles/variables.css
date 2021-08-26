@@ -2,6 +2,10 @@
   /* Colors */
   --white: #ffffff;
   --black: #000000;
+  --blue: #337ab7;
+
+  /* Color aliases */
+  --link: var(--blue);
 
   /* Fonts */
   --font-primary:

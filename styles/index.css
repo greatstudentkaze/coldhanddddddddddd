@@ -1,0 +1,10 @@
+/* Global */
+
+@import "box-model.css";
+@import "variables.css";
+@import "base.css";
+
+/* Blocks */
+
+@import "blocks/visually-hidden.css";
+@import "blocks/page.css";

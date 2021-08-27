@@ -4,5 +4,11 @@
 }
 
 .page__body {
+  cursor: default;
+
+  color: var(--dark);
+
   font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 24px;
 }

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1",
+    "categories": ["T-shirt"],
+    "title": "THE DARKNESS TEE",
+    "image": "/catalog/the-darkness-pasha.jpg",
+    "price": 1299
+  },
+  {
+    "id": "2",
+    "categories": ["Hoodie"],
+    "title": "LOVE IS PAIN HOODIE",
+    "image": "/catalog/love-is-pain-hoodie.jpg",
+    "price": 3499,
+    "new": true
+  },
+  {
+    "id": "3",
+    "categories": ["T-shirt"],
+    "title": "ZERO TWO TEE",
+    "image": "/catalog/zero-two-tee.jpg",
+    "price": 1499,
+    "new": true
+  },
+  {
+    "id": "4",
+    "categories": ["T-shirt"],
+    "title": "THE DARKNESS TEE",
+    "image": "/catalog/the-darkness-anya.jpg",
+    "price": 1299,
+    "new": true
+  },
+  {
+    "id": "5",
+    "categories": ["T-shirt"],
+    "title": "THE DARKNESS TEE",
+    "image": "/catalog/the-darkness-gray.jpg",
+    "price": 1299,
+    "new": true
+  },
+  {
+    "id": "6",
+    "categories": ["Hoodie"],
+    "title": "GUESS WHO HOODIE",
+    "image": "/catalog/guess-who-hoodie.jpg",
+    "price": 3299
+  }
+]

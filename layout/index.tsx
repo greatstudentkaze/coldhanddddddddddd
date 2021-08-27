@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import {  FunctionComponent } from 'react';
 
 import { Header } from './header';
 import { Footer } from './footer';
@@ -10,13 +10,15 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
     return (
         <div className={styles.wrapper}>
             <Header />
-            <main>{children}</main>
+            <main className={styles.main}>
+                {children}
+            </main>
             <Footer />
         </div>
     );
 };
 
-export const withLayout = <T extends Record<string, unknown>>(Component: FC<T>) => {
+export const withLayout = <T extends Record<string, unknown>>(Component: FunctionComponent<T>) => {
     // eslint-disable-next-line react/display-name
     return (props: T): JSX.Element => {
         return (

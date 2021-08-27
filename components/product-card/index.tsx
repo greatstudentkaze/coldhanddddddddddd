@@ -1,13 +1,18 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import cn from 'classnames';
+import { useMediaQuery } from 'react-responsive';
 
 import { formatRuPrice } from '../../helpers/format-price';
 
 import { ProductCardProps } from './index.props';
 import styles from './index.module.css';
 
-const getImageDimensions = (form: ProductCardProps['form']) => {
+const getImageDimensions = (form: ProductCardProps['form'], isMobile = false) => {
+    if (isMobile) {
+        return { width: 435, height: 435 };
+    }
+
     switch (form) {
         case 'vertical':
             return { width: 275, height: 400 };
@@ -26,8 +31,10 @@ export const ProductCard = ({ product, form = 'square', ...props }: ProductCardP
         image,
     } = product;
 
+    const isMobile = useMediaQuery({ query: '(max-width: 475px)' });
+
     const titleId = `product-card-${id}`;
-    const { width, height } = getImageDimensions(form);
+    const { width, height } = getImageDimensions(form, isMobile);
 
     return (
         <article {...props}>

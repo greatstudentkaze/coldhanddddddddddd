@@ -1,14 +1,26 @@
 :root {
   /* Colors */
   --white: #ffffff;
-  --black: #000000;
+  --black: #141518;
+  --dark: #263238;
   --blue: #337ab7;
+  --dark-blue: #0e4da4;
+  --green: #1bb55c;
+  --light-gray: #f0f0f0;
+  --gray: #979797;
+  --tomato: #e74c3c;
+  --yellow: #ffbb12;
 
   /* Color aliases */
   --link: var(--blue);
+  --accent: var(--tomato);
+  --error: var(--tomato);
+  --success: var(--green);
 
   /* Fonts */
-  --font-primary:
+  --font-primary: "Inter", "Arial", sans-serif;
+  --font-secondary: "Ruda", "Arial Narrow", sans-serif;
+  --font-system:
     -apple-system,
     blinkmacsystemfont,
     segoe ui,

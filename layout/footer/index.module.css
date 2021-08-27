@@ -1,14 +1,52 @@
 .footer {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (width <= 425px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (width > 425px) and (width <= 1440px) {
+  .wrapper {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
 }
 
 .copyright {
-
+  margin: 0;
 }
 
 .author {
+  margin: 0;
 }
 
 .author a {
-  color: var(--link);
+  transition: opacity 0.3s ease-in-out 0s;
+}
+
+.author a:hover {
+  opacity: 0.8;
+}
+
+.author a:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.author a:active {
+  opacity: 0.6;
 }

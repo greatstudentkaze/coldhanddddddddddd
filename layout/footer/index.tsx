@@ -16,9 +16,11 @@ const getCopyrightYearsInterval = () => {
 
 export const Footer = ({ className, ...props }: FooterProps): JSX.Element => {
     return (
-        <footer className={cn(className, styles.footer, 'container')} {...props}>
-            <p className={styles.copyright}>coldhand © {getCopyrightYearsInterval()} Все&nbsp;права&nbsp;защищены</p>
-            <p className={styles.author}>by&nbsp;<a href="https://nefagin.ru">gsk</a></p>
+        <footer className={cn(className, styles.footer)} {...props}>
+            <div className={cn('container', styles.wrapper)}>
+                <p className={styles.copyright}>coldhand © {getCopyrightYearsInterval()}</p>
+                <p className={styles.author}>by&nbsp;<a href="https://nefagin.ru">gsk</a></p>
+            </div>
         </footer>
     );
 };

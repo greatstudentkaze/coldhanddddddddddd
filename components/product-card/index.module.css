@@ -1,0 +1,58 @@
+/* Link */
+
+.link {
+  display: block;
+
+  margin-bottom: 20px;
+}
+
+/* To remove inline-block wrapper */
+.link > div {
+  display: block !important;
+}
+
+.link img {
+  display: block;
+
+  transition:
+    transform 0.3s ease-in-out 0s,
+    opacity 0.2s ease-in-out 0s;
+}
+
+.link:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.link:focus-visible img,
+.link:hover img {
+  transform: scale(1.1);
+}
+
+.link:focus-visible img {
+  transform: scale(1.1);
+}
+
+.link:active img {
+  opacity: 0.7;
+}
+
+/* Title */
+
+.title {
+  margin: 0;
+  margin-bottom: 7px;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+/* Price */
+
+.price {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 500;
+}

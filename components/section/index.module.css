@@ -26,6 +26,8 @@
   }
 }
 
+/* Header (Title with Link) */
+
 .header {
   display: grid;
 }
@@ -54,6 +56,8 @@
     column-gap: 50px;
   }
 }
+
+/* Title */
 
 .title {
   margin: 0;
@@ -92,17 +96,16 @@
   font-weight: 500;
 }
 
-@media (width <= 768px) {
-  .linkToCatalog {
-    justify-self: end;
-  }
-}
-
 @media (width > 475px) {
   .linkToCatalog {
     font-size: 20px;
-
     line-height: 28px;
+  }
+}
+
+@media (width <= 768px) {
+  .linkToCatalog {
+    justify-self: end;
   }
 }
 
@@ -111,20 +114,6 @@
 
   border: 2px solid var(--black);
   border-radius: 50%;
-}
-
-@media (width <= 475px) {
-  .arrowIcon {
-    margin-left: 10px;
-    padding: 6px;
-  }
-}
-
-@media (width > 475px) {
-  .arrowIcon {
-    margin-left: 15px;
-    padding: 10px;
-  }
 }
 
 .arrowIcon svg {
@@ -136,6 +125,11 @@
 }
 
 @media (width <= 475px) {
+  .arrowIcon {
+    margin-left: 10px;
+    padding: 6px;
+  }
+
   .arrowIcon svg {
     width: 24px;
     height: 24px;
@@ -143,15 +137,24 @@
 }
 
 @media (width > 475px) {
+  .arrowIcon {
+    margin-left: 15px;
+    padding: 10px;
+  }
+
   .arrowIcon svg {
     width: 28px;
     height: 28px;
   }
 }
 
-.linkToCatalog:hover,
-.linkToCatalog:focus-visible {
+.linkToCatalog:hover {
   text-decoration: underline;
+}
+
+.linkToCatalog:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
 }
 
 .linkToCatalog:hover .arrowIcon,
@@ -194,7 +197,6 @@
 @media (width > 960px) {
   .productList {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
   }
